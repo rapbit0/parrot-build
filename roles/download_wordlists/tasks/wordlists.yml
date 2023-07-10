@@ -1,0 +1,7 @@
+---
+- name: "Extract Custom Wordlists"
+  unarchive:
+      src: "{{ role_path }}/files/custom_lists.tar.gz"
+      dest: "/usr/share/wordlists/"
+  become: true
+  become_method: sudo

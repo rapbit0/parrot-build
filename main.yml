@@ -10,3 +10,4 @@
     - role: "roles/configure-tmux"
     - role: "roles/customize-terminal"
     - role: "roles/install-tools"
+    - role: "roles/download_wordlists"

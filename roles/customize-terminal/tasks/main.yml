@@ -3,6 +3,10 @@
   copy:
     src: "{{ role_path }}/files/.bashrc"
     dest: "{{ ansible_env.HOME }}"
+- name: "Copy vimrc"
+  copy:
+    src: "{{ role_path }}/files/.vimrc"
+    dest: "{{ ansible_env.HOME }}"
 - name: "Read current mate terminal profiles"
   dconf:
     key: "/org/mate/terminal/global/profile-list"
