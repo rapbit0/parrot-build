@@ -1,0 +1,12 @@
+---
+- name: "Customizing Parrot"
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: "Demo Debug"
+      debug:
+        msg: "test"
+  roles:
+    - role: "roles/configure-tmux"
+    - role: "roles/customize-terminal"
+    - role: "roles/install-tools"
